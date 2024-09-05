@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@drawable/img2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:id="@+id/img1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        android:id="@+id/content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don’t Feel Alone"
+            android:textSize="28sp"
+            android:fontFamily="@font/helvetica_heavy"
+            android:textColor="@color/black"
+            android:id="@+id/main_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineHeight="30dp"
+            android:text="Nobody likes to be alone and the built-in group video call feature helps you connect."
+            android:textSize="17sp"
+            android:fontFamily="@font/helvetica_medium"
+            android:textColor="@color/gray"
+            android:id="@+id/main_content_description"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pagination2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="620dp"
+            android:id="@+id/pagination1"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pagination1"
+            android:layout_marginTop="40dp"
+            android:text="Get Started"
+            android:fontFamily="@font/helvetica_bold"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
